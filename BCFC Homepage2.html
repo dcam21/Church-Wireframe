@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<title>Bethelhem City of Faith Church</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("../BCFCCode2/Images/city.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("../BCFCCode2/Images/logo.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("../BCFCCode2/Images/3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WELCOME <span class="w3-hide-small">TO</span> THE CITY!</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+<div class= "about hidden">
+<style>
+.about
+{
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+}
+.about h3
+{
+  text-transform: uppercase;
+}
+.about h3, .about p
+{
+  transition: all 0.8s ease;
+}
+.about.hidden h3
+{
+ 
+  opacity: 0;
+  transform: translate3d(0, 0, 400px) rotate(-40deg);
+}
+
+</style>
+  <h3 class="w3-center">ABOUT US</h3>
+  <p class="w3-center"><p style="text-align:center"><img alt="BCFC" src="../BCFC Code/Images/logo.jpg" style="height:100px; width:214px" /></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#008080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif"><strong>OUR BELIEF CONCERNING THE BIBLE</strong></span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#696969"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">We believe the Bible to be the inspired and only infallible written word of God.</span></span></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#008080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif"><strong>OUR BELIEF CONCERNING GOD</strong></span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#696969"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">We believe there is one God, eternally existent in three persons: God the Father, God the&nbsp;Son, and God the Holy Ghost.</span></span></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#008080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif"><strong>OUR BELIEF CONCERNING THE CHURCH</strong></span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#696969"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">We believe in the Blessed Hope, which is the rapture of the church of God, which is in&nbsp;Christ, at His return.</span></span></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#008080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif"><strong>OUR BELIEF CONCERNING SIN</strong></span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#696969"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">We believe that the only means of being cleansed from sin is through repentance and&nbsp;faith in The precious blood of Jesus Christ.</span></span></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#008080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif"><strong>OUR BELIEF CONCERNING SALVATION</strong></span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#808080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">We believe the regeneration by the Holy Ghost is absolutely essential for personal&nbsp;salvation.</span></span></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#008080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif"><strong>OUR BELIEF CONCERNING CHRIST</strong></span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#696969"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">We believe that the redemptive work of Christ on the cross provides healing for the&nbsp;Human body in answer to believing prayer.</span></span></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#008080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif"><strong>OUR BELIEF CONCERNING THE HOLY GHOST</strong></span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#696969"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">We believe that the baptism in the Holy Ghost, according to Acts 2:4 is given to the&nbsp;believer which ask for it.</span></span></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#008080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif"><strong>OUR BELIEF CONCERNING SANCTIFICATION</strong></span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#696969"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">We believe in the sanctifying power of the Holy Ghost by whose indwelling the Christian&nbsp;Is enabled to live a holy and separated life in this present world.</span></span></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#008080"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif"><strong>NON- ESSENTIALS</strong></span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#696969"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">We affirm that the doctrines of the Trinity, the deity of Christ, the bodily resurrection, the atoning work of Christ on the cross, and salvation by grace through faith make up the essential, distinctive nature of Christianity. In regards to these essential doctrines there can be no conflicting opinions of those who call themselves true followers of Christ. However, we do acknowledge that there are peripheral, or non-essential doctrines, that are important, but not critical to the follower of Christ as it relates to our salvation.</span></span></span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#696969"><span style="font-family:goudy old style,garamond,big caslon,times new roman,serif">Some of these doctrines include the specific functions of women in ministry, the exact timing and nature of the rapture, extent and use of certain spiritual gifts, the relationship between election and free-will in salvation, etc. While our church will be diligent to establish positions as it relates to these non-essentials we will not allow these peripheral doctrines to cause division within the church. We will accept into our body those who have differing views on the non-essential doctrines, but will not allow those of a different opinion to fracture the church. While we celebrate diversity along all lines (racial and theological), we will ultimately pursue the unity of the church</span></span></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:12px">(click below)</span></p>
+
+<p style="text-align:center"><span style="font-size:20px"><a href="/Our-Mission"><img alt="" src="http://files.stablerack.com/WebFiles/82763/PhotoGrid_1444272974186.jpg" style="height:100px; width:100px" /></a></span></p>
+</div>
+<p style="text-align:center">&nbsp;</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+        
+      </p>
+    </div>
+  </div>
+  <!--<p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>-->
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge"><a href="our leaders.html">OUR LEADERS</span><br></a>
+    <!--Partners-->
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge"><a href="">OUTREACH</a></span><br>
+    <!--Projects Done-->
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge"><a href="">OUR MINISTIRES</span><br></a>
+    <!--Happy Clients-->
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge"><a href="">WORSHIP EXPERIENCE</span><br></a>
+    <!--Meetings-->
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">The City</h3>
+  <p class="w3-center"><em>Meet The Family!<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="../BCFC Code2/Images/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../BCFC Code2/Images/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../BCFC Code2/Images/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../BCFC Code2/Images/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="../BCFC Code2/Images/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../BCFC Code2/Images/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../BCFC Code2/Images/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../BCFC Code2/Images/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <button class="w3-button w3-padding-large" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">COME VISIT US</h3>
+  <p class="w3-center"><em>We would love your company!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Fayetteville, GA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: bethlehemcity001@gmail.com<br>
+      </div>
+      <p> Come and hear a mighty & powerful word from the Lord.<!--<i class="fa fa-coffee"></i>,--> </p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
